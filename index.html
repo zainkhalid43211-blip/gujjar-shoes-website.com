@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GUJJAR — premium everyday footwear. Explore sneakers, runners and casual shoes. Order directly on WhatsApp.">
+  <title>GUJJAR — Premium Footwear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">WELCOME TO GUJJAR — STEP UP YOUR EVERYDAY STYLE <span>✦</span> WHATSAPP ORDERS AVAILABLE</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Gujjar home"><span class="brand-mark">G</span><span>GUJJAR<small>FOOTWEAR CO.</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home">HOME</a><a href="#collection">SHOP</a><a href="#story">OUR STORY</a><a href="#reviews">REVIEWS</a><a href="#support">SUPPORT</a><a href="#contact">CONTACT</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchFocus" aria-label="Search">⌕</button>
+      <button class="cart-button" id="cartOpen">BAG <span id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">THE NEW EVERYDAY ESSENTIAL</p>
+        <h1>OWN YOUR<br><em>EVERY STEP.</em></h1>
+        <p class="hero-copy">Fresh looks. Everyday comfort. A style that speaks for itself.</p>
+        <a class="button button-light" href="#collection">EXPLORE COLLECTION <span>↗</span></a>
+      </div>
+      <div class="hero-note"><span>01 / 03</span><span>GUJJAR ORIGINAL COLLECTION</span></div>
+    </section>
+
+    <section class="intro-strip">
+      <span>DESIGNED FOR YOUR EVERYDAY</span><b>✳</b><span>COMFORT THAT MOVES WITH YOU</span><b>✳</b><span>MADE TO STAND OUT</span>
+    </section>
+
+    <section class="categories section-wrap">
+      <div class="section-heading">
+        <div><p class="eyebrow">FIND YOUR FIT</p><h2>SHOP BY <em>STYLE</em></h2></div>
+        <p>From laid-back days to your next big move.</p>
+      </div>
+      <div class="category-grid">
+        <a class="category-card cat-sneakers" href="#collection" data-category-link="Sneakers"><span>01 / DAILY ROTATION</span><strong>SNEAKERS</strong><b>SHOP NOW ↗</b></a>
+        <a class="category-card cat-sport" href="#collection" data-category-link="Sports"><span>02 / BUILT TO MOVE</span><strong>SPORTS</strong><b>SHOP NOW ↗</b></a>
+        <a class="category-card cat-casual" href="#collection" data-category-link="Casual"><span>03 / OFF-DUTY STYLE</span><strong>CASUAL</strong><b>SHOP NOW ↗</b></a>
+      </div>
+    </section>
+
+    <section class="collection section-wrap" id="collection">
+      <div class="section-heading collection-heading">
+        <div><p class="eyebrow">THE GUJJAR EDIT</p><h2>FEATURED <em>FOOTWEAR</em></h2></div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search shoes..."></label>
+      </div>
+      <div class="filter-row" id="filters">
+        <button class="filter active" data-filter="All">ALL PRODUCTS</button>
+        <button class="filter" data-filter="Sneakers">SNEAKERS</button>
+        <button class="filter" data-filter="Sports">SPORTS</button>
+        <button class="filter" data-filter="Casual">CASUAL</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="demo-note">Product names, prices and availability shown here are sample catalogue details. Confirm actual stock before publishing.</p>
+    </section>
+
+    <section class="statement" id="story">
+      <div class="statement-inner">
+        <p class="eyebrow">MORE THAN JUST SHOES</p>
+        <h2>WALK YOUR WAY.<br><em>MAKE IT GUJJAR.</em></h2>
+        <p>We believe great style starts from the ground up. Find your next favourite pair and make every step count.</p>
+        <a class="button button-dark" href="#collection">FIND YOUR PAIR <span>↗</span></a>
+      </div>
+      <div class="statement-badge">G<br><small>EST. 2026</small></div>
+    </section>
+
+
+    <section class="reviews-section section-wrap" id="reviews">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE GUJJAR COMMUNITY</p><h2>LOVE YOUR PAIR? <em>RATE US.</em></h2></div>
+        <p>Your feedback helps us make every customer experience better.</p>
+      </div>
+      <div class="review-layout">
+        <div class="review-summary">
+          <div class="rating-number" id="averageRating">5.0</div>
+          <div class="stars-display" id="averageStars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p><strong id="reviewCount">2</strong> customer reviews</p>
+        </div>
+        <div class="review-list" id="reviewList">
+          <article class="review-card"><div class="review-stars">★★★★★</div><h4>Great everyday style</h4><p>Comfortable look and a clean design. Really liked the style.</p><small>GUJJAR CUSTOMER</small></article>
+          <article class="review-card"><div class="review-stars">★★★★★</div><h4>Easy ordering</h4><p>The WhatsApp ordering process was simple and convenient.</p><small>GUJJAR CUSTOMER</small></article>
+        </div>
+      </div>
+      <div class="review-form-wrap">
+        <div><p class="eyebrow">SHARE YOUR EXPERIENCE</p><h3>WRITE A REVIEW</h3><p class="support-copy">Tell us what you think about your GUJJAR experience.</p></div>
+        <form id="reviewForm" class="feedback-form">
+          <label class="form-label" for="reviewName">YOUR NAME</label>
+          <input id="reviewName" class="form-control" type="text" maxlength="50" placeholder="Enter your name" required>
+          <label class="form-label">YOUR RATING</label>
+          <div class="star-picker" id="starPicker" role="radiogroup" aria-label="Choose a rating">
+            <button type="button" data-rating="1" aria-label="1 star">★</button><button type="button" data-rating="2" aria-label="2 stars">★</button><button type="button" data-rating="3" aria-label="3 stars">★</button><button type="button" data-rating="4" aria-label="4 stars">★</button><button type="button" data-rating="5" aria-label="5 stars">★</button>
+          </div>
+          <label class="form-label" for="reviewText">YOUR REVIEW</label>
+          <textarea id="reviewText" class="form-control" rows="3" maxlength="400" placeholder="Write your experience..." required></textarea>
+          <button class="button button-dark full-button" type="submit">SUBMIT RATING ↗</button>
+          <small class="form-disclaimer">Demo project: reviews are saved in this browser only.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="support-section" id="support">
+      <div class="support-inner">
+        <div class="support-intro">
+          <p class="eyebrow">WE ARE HERE TO HELP</p>
+          <h2>HAVE AN <em>ISSUE?</em></h2>
+          <p>Send us a complaint or suggestion. Our support team can follow up with you on WhatsApp.</p>
+          <div class="support-contact"><span>WHATSAPP SUPPORT</span><strong>+92 311 2930862</strong></div>
+        </div>
+        <form id="complaintForm" class="complaint-form">
+          <h3>COMPLAINT / FEEDBACK FORM</h3>
+          <label class="form-label" for="complaintName">YOUR NAME</label>
+          <input id="complaintName" class="form-control" type="text" maxlength="60" placeholder="Enter your name" required>
+          <label class="form-label" for="complaintOrder">ORDER NUMBER <span class="optional">(OPTIONAL)</span></label>
+          <input id="complaintOrder" class="form-control" type="text" maxlength="40" placeholder="e.g. GJ-1001">
+          <label class="form-label" for="complaintType">COMPLAINT TYPE</label>
+          <select id="complaintType" class="form-control" required>
+            <option value="">Choose a category</option>
+            <option>Order / Delivery Issue</option><option>Product Quality</option><option>Wrong Size / Product</option><option>Payment Question</option><option>Return / Exchange Request</option><option>Suggestion</option><option>Other</option>
+          </select>
+          <label class="form-label" for="complaintMessage">MESSAGE</label>
+          <textarea id="complaintMessage" class="form-control" rows="4" maxlength="800" placeholder="Please explain your issue..." required></textarea>
+          <button class="button button-dark full-button" type="submit">SEND COMPLAINT ON WHATSAPP ↗</button>
+          <small class="form-disclaimer">Your message will open in WhatsApp so you can review and send it.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="benefits section-wrap">
+      <div><span>✦</span><h3>STYLE FIRST</h3><p>Clean looks for everyday outfits.</p></div>
+      <div><span>↗</span><h3>EASY ORDERING</h3><p>Place your order directly through WhatsApp.</p></div>
+      <div><span>✓</span><h3>PERSONAL SERVICE</h3><p>Confirm size, stock and delivery with our team.</p></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-main">
+      <div><a class="brand footer-brand" href="#home"><span class="brand-mark">G</span><span>GUJJAR<small>FOOTWEAR CO.</small></span></a><p class="footer-tag">OWN YOUR EVERY STEP.</p></div>
+      <div><h4>EXPLORE</h4><a href="#collection">All shoes</a><a href="#story">Our story</a><a href="#home">Back to top</a></div>
+      <div><h4>GET IN TOUCH</h4><p>Questions about a pair?</p><a class="footer-whatsapp" href="https://wa.me/923112930862" target="_blank" rel="noopener">CHAT ON WHATSAPP ↗</a><p class="phone">+92 311 2930862</p></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 GUJJAR FOOTWEAR CO.</span><span>MADE FOR EVERY STEP.</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag">
+    <div class="drawer-head"><h3>YOUR BAG</h3><button id="cartClose" class="close-button">×</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty-cart">Your bag is waiting for the right pair.</p></div>
+    <div class="cart-footer"><div class="subtotal"><span>SUBTOTAL</span><strong id="cartSubtotal">Rs. 0</strong></div><button class="button button-dark full-button" id="checkoutButton">ORDER ON WHATSAPP ↗</button><small>Final stock, delivery and payment details will be confirmed on WhatsApp.</small></div>
+  </aside>
+
+  <div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+    <button class="close-button modal-close" id="modalClose">×</button>
+    <p class="eyebrow">ONE LAST STEP</p><h3 id="orderTitle">YOUR GUJJAR PAIR</h3>
+    <div id="modalProduct" class="modal-product"></div>
+    <label class="form-label">SELECT SIZE</label>
+    <select id="sizeSelect" class="form-control">
+      <option value="">Choose your size</option><option>39</option><option>40</option><option>41</option><option>42</option><option>43</option><option>44</option><option>45</option>
+    </select>
+    <label class="form-label">QUANTITY</label>
+    <input id="quantityInput" class="form-control" type="number" min="1" max="10" value="1">
+    <label class="form-label">YOUR NAME</label>
+    <input id="customerName" class="form-control" type="text" placeholder="Enter your name">
+    <label class="form-label">DELIVERY AREA</label>
+    <input id="customerArea" class="form-control" type="text" placeholder="Your city / area">
+    <button class="button button-dark full-button" id="sendOrder">SEND ORDER TO WHATSAPP ↗</button>
+    <small class="modal-help">WhatsApp will open with your order details ready to send.</small>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
